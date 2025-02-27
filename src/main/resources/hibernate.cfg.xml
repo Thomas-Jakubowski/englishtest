@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Connexion à une base de données SQLite -->
+        <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.connection.url">jdbc:sqlite:C:/Users/DÉVELOPPEUR/Data/data.db</property>
+
+        <property
+                name="hibernate.dialect">org.hibernate.community.dialect.SQLiteDialect</property>
+        <!-- Affiche les requètes SQL générées par Hibernate dans la console -->
+        <property name="show_sql">true</property>
+        <!-- Recrée les tables de la base de données à chaque démarrage -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- Classes de mapping -->
+        <mapping class="com.xefi.tpjavaee.pojos.Verbe"/>
+        <mapping class="com.xefi.tpjavaee.pojos.Question"/>
+        <mapping class="com.xefi.tpjavaee.pojos.Partie"/>
+        <mapping class="com.xefi.tpjavaee.pojos.Joueur"/>
+        <mapping class="com.xefi.tpjavaee.pojos.Ville"/>
+    </session-factory>
+</hibernate-configuration>
