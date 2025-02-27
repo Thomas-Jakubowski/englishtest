@@ -41,4 +41,52 @@ public class Question {
         this.dateEnvoi = dateEnvoi;
         this.dateReponse = dateReponse;
     }
+
+    public Long getIdPartie() {
+        return idPartie;
+    }
+
+    public void setIdPartie(Long idPartie) {
+        this.idPartie = idPartie;
+    }
+
+    public Verbe getVerbe() {
+        return verbe;
+    }
+
+    public void setVerbe(Verbe verbe) {
+        this.verbe = verbe;
+    }
+
+    public String getReponsePreterit() {
+        return reponsePreterit;
+    }
+
+    public void setReponsePreterit(String reponsePreterit) {
+        this.reponsePreterit = reponsePreterit;
+    }
+
+    public String getReponseParticipePasse() {
+        return reponseParticipePasse;
+    }
+
+    public void setReponseParticipePasse(String reponseParticipePasse) {
+        this.reponseParticipePasse = reponseParticipePasse;
+    }
+
+    public LocalDateTime getDateEnvoi() {
+        return dateEnvoi;
+    }
+
+    public void setDateEnvoi(LocalDateTime dateEnvoi) {
+        this.dateEnvoi = dateEnvoi;
+    }
+
+    public LocalDateTime getDateReponse() {
+        return dateReponse;
+    }
+
+    public void setDateReponse(LocalDateTime dateReponse) {
+        this.dateReponse = dateReponse;
+    }
 }

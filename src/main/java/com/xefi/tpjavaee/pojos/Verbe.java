@@ -29,4 +29,44 @@ public class Verbe {
 
     public Verbe() {
     }
+
+    public String getBaseVerbale() {
+        return baseVerbale;
+    }
+
+    public void setBaseVerbale(String baseVerbale) {
+        this.baseVerbale = baseVerbale;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getPreterit() {
+        return preterit;
+    }
+
+    public void setPreterit(String preterit) {
+        this.preterit = preterit;
+    }
+
+    public String getParticipePasse() {
+        return participePasse;
+    }
+
+    public void setParticipePasse(String participePasse) {
+        this.participePasse = participePasse;
+    }
+
+    public String getTraduction() {
+        return traduction;
+    }
+
+    public void setTraduction(String traduction) {
+        this.traduction = traduction;
+    }
 }

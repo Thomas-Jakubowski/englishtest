@@ -141,6 +141,7 @@ public class JoueurDAO extends Dao{
                             "select j from Joueur as j where j.email = :email and j.motDePasse = :password",
                             Joueur.class)
                     .setParameter("email", email)
+                    .setParameter("password", password)
                     .uniqueResult();
             return joueur != null;
         } catch (Exception ex) {

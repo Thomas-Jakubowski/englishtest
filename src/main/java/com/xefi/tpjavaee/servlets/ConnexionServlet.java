@@ -32,6 +32,7 @@ public class ConnexionServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
+
         String erreurs = "";
 
         if (email.isEmpty() || password.isEmpty()) {
@@ -42,7 +43,7 @@ public class ConnexionServlet extends HttpServlet {
             if(joueurService.auth(email, password)) {
                 Joueur joueur = joueurService.getJoueurByEmail(email);
                 session.setAttribute("joueur", joueur);
-                response.sendRedirect("partie");
+                response.sendRedirect("/partie");
             } else {
                 erreurs += "Email ou mot de passe incorrect !";
             }

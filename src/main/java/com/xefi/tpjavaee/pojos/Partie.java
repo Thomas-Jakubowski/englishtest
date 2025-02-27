@@ -15,6 +15,14 @@ public class Partie {
     @JoinColumn(name = "id_joueur", nullable = false)
     private Joueur joueur;
 
+    public Partie(Joueur joueur) {
+        this.joueur = joueur;
+    }
+
+    public Partie() {
+
+    }
+
     public Long getId() {
         return id;
     }
